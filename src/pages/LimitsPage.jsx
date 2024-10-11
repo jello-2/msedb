@@ -206,6 +206,7 @@ const LimitsPage = () => {
 
   return (
     <div className="flex flex-col items-center p-8 space-y-6">
+      <h1 className="text-4xl font-courier p-8">Limits</h1>
       {/* Check if a post is selected, render the question window, otherwise render the list */}
       {selectedPost ? (
         <div className="w-full max-w-2xl bg-white rounded-[30px] shadow-lg p-6 hover:shadow-2xl transition-shadow relative">
