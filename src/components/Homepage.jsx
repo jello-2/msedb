@@ -13,8 +13,7 @@ const mathTopics = {
   "Statistics": "Stats",
   "Vectors": "Vec",
   "Limits": "Limits",
-  "Derivatives": "Diff",
-  "Applications of Derivatives": "Derivatives",
+  "Derivatives": "Differentiation",
   "Integration": "Int",
   "Complex Numbers": "ComNum"
 };

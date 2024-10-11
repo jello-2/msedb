@@ -6,6 +6,7 @@ import Homepage from './components/Homepage';
 import AlgebraPage from './pages/AlgebraPage';
 import LimitsPage from './pages/LimitsPage';
 import HowToUse from './pages/HowToUse';
+import DerivativesPage from './pages/DerivativesPage';
 import Motivation from './pages/Motivation'
 // Import other pages as needed
 
@@ -17,6 +18,7 @@ const App = () => {
         {/* Actual Math Pages*/}
         <Route path="/algebra" element={<AlgebraPage />} />
         <Route path="/limits" element={<LimitsPage />} />
+        <Route path="/differentiation" element={<DerivativesPage/>}/>
 
         {/* Info Pages*/}
         <Route path="/howtouse" element={<HowToUse />} />

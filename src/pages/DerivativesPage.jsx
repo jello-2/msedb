@@ -4,7 +4,7 @@ import 'katex/dist/katex.min.css'; // Import KaTeX CSS
 
 import { CheckCircle, Slash } from 'react-feather'; 
 
-const LimitsPage = () => {
+const DerivativesPage = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [postDetails, setPostDetails] = useState({});
@@ -47,7 +47,7 @@ const LimitsPage = () => {
     setLoadingMore(true); // Set loadingMore state to show loading indicator for the Load More button
     try {
       const response = await fetch(
-        `https://api.stackexchange.com/2.3/questions?order=desc&sort=votes&tagged=limits-without-lhopital&site=math&pagesize=100&page=${pageNum}&key=rl_drhuikHjdY1MtufKAk9RdhDvt`
+        `https://api.stackexchange.com/2.3/questions?order=desc&sort=votes&tagged=derivatives&site=math&pagesize=100&page=${pageNum}&key=rl_drhuikHjdY1MtufKAk9RdhDvt`
       );
       const data = await response.json();
       setPosts((prevPosts) => [...prevPosts, ...data.items]); // Add new posts to the existing list
@@ -200,7 +200,7 @@ const LimitsPage = () => {
 
   return (
     <div className="flex flex-col items-center p-8 space-y-6">
-      <h1 className="text-4xl font-courier p-8">Limits</h1>
+      <h1 className="text-4xl font-courier p-8">Derivatives</h1>
       {/* Check if a post is selected, render the question window, otherwise render the list */}
       {selectedPost ? (
         <div className="w-full max-w-2xl bg-white rounded-[30px] shadow-lg p-6 hover:shadow-2xl transition-shadow relative">
@@ -267,4 +267,4 @@ const LimitsPage = () => {
   );
 };
 
-export default LimitsPage;
+export default DerivativesPage;
