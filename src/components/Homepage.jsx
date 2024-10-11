@@ -62,9 +62,6 @@ const Homepage = () => {
             1000, // Waits 1s
             'Math Stack Exchange [db]',
             500,
-            () => {
-              console.log('Sequence completed');
-            },
           ]}
           wrapper="span"
           cursor={false}
@@ -101,24 +98,18 @@ const Homepage = () => {
             </div>
           )}
           {/* Pill-shaped icons section */}
-          <div className="mt-4 flex justify-end space-x-1">
+          <div className="mt-3 flex justify-end space-x-1">
             <div className="relative">
               <HelpCircle 
-                className="h-6 w-6 text-blue-500 cursor-pointer hover:text-blue-600" 
+                className="h-6 w-6 text-zinc-700 cursor-pointer hover:text-blue-600" 
                 onClick={handleHowToUseClick}
               />
-              <span className="absolute bottom-10 right-0 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
-                Motivation
-              </span>
             </div>
             <div className="relative">
               <Info 
-                className="h-6 w-6 text-green-500 cursor-pointer hover:text-green-600" 
+                className="h-6 w-6 text-zinc-700 cursor-pointer hover:text-green-600" 
                 onClick={handleMotivationClick}
               />
-              <span className="absolute bottom-10 right-0 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
-                How to use
-              </span>
             </div>
           </div>
         </div>
