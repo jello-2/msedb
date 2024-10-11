@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BlockMath, InlineMath } from 'react-katex';
 import 'katex/dist/katex.min.css'; // Import KaTeX CSS
+import { TypeAnimation } from 'react-type-animation';
 
 import { CheckCircle, Slash } from 'react-feather'; 
 
@@ -200,7 +201,16 @@ const LimitsPage = () => {
 
   return (
     <div className="flex flex-col items-center p-8 space-y-6">
-      <h1 className="text-4xl font-courier p-8">Limits</h1>
+      <h1 className="text-4xl font-courier p-8"><TypeAnimation
+          sequence={[
+            'Limits',
+          ]}
+          wrapper="span"
+          cursor={false}
+          repeat={0}
+          speed={1}
+          style={{ fontSize: '2em', display: 'inline-block', margin: '4px', fontFamily: 'Courier New, monospace' }}
+        /></h1>
       {/* Check if a post is selected, render the question window, otherwise render the list */}
       {selectedPost ? (
         <div className="w-full max-w-2xl bg-white rounded-[30px] shadow-lg p-6 hover:shadow-2xl transition-shadow relative">
