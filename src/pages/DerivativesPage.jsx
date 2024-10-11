@@ -202,7 +202,7 @@ const DerivativesPage = () => {
     <div className="flex flex-col items-center p-8 space-y-6">
       <h1 className="text-4xl font-courier p-8"><TypeAnimation
           sequence={[
-            'Derivatives',
+            '[Derivatives]',
           ]}
           wrapper="span"
           cursor={false}
