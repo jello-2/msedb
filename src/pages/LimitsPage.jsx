@@ -178,12 +178,12 @@ const LimitsPage = () => {
         <div className="flex justify-between items-center mb-2">
           <div className="flex space-x-2">{renderTags(post.tags)}</div>
           <div className="text-gray-500 text-sm flex items-center">
-          <span className="mr-1">Score: {post.score} | </span>
+          <span className="mr-1">Score: {post.score} [</span>
           {post.is_answered && post.accepted_answer_id ? (
-            <CheckCircle size={16} color="green" className="mr-1" />
+            <CheckCircle size={15} color="green" className="mr-1 " />
           ) : (
-            <Slash size={16} color="red" className="mr-1" />
-          )}
+            <Slash size={15} color="red" className="mr-1 " />
+          )}]
           </div>
         </div>
       </div>

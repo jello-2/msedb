@@ -12,8 +12,8 @@ const mathTopics = {
   "Combinatorics and Probability": "Probability",
   "Statistics": "Stats",
   "Vectors": "Vec",
-  "Limits": "Limits",
-  "Derivatives": "Differentiation",
+  "Limits": "Limits", //done
+  "Derivatives": "Differentiation", //done
   "Integration": "Int",
   "Complex Numbers": "ComNum"
 };
